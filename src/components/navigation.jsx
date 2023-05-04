@@ -10,9 +10,10 @@ export const Navigation = (props) => {
             className="navbar-toggle collapsed"
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
+            style={{marginRight: '0px'}}
           >
             {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
+            <span className="sr-only"></span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
