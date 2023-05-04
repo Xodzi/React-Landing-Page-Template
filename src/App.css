@@ -13,6 +13,7 @@
   #contact,
   #footer {
     width: 111%;
+    flex-wrap: wrap;
   }
 
   #portfolio {
