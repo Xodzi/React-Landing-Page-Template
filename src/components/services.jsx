@@ -6,9 +6,9 @@ export const Services = (props) => {
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Какой-нибудь</h2>
+          <h2>Прекрасный отдых в уютном просторном доме</h2>
           <p>
-          Лозунг!
+          Сделано с любовью к гостям и Байкалу
           </p>
         </div>
         <div className="row">
@@ -26,6 +26,7 @@ export const Services = (props) => {
                     <h3>{d.name}</h3>
                     <p>{d.text}</p>
                     <p>{d.text2}</p>
+                    <p>{d.text3}</p>
                   </div>
                 </div>
               ))

@@ -38,7 +38,7 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Связь с нами</h2>
+                <h2>Контакты</h2>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
                 <div className="row">
