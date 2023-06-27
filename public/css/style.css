@@ -141,7 +141,7 @@ hr {
   background-color: #608dfd;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .section-title h2 {
   position: relative;
@@ -250,7 +250,9 @@ header .intro-text {
 }
 #features i.fa {
   font-size: 38px;
-  margin-bottom: 20px;
+  margin-left: 25;
+  margin-bottom: 10px;
+  margin-top: 5px;
   transition: all 0.5s;
   color: #fff;
   width: 100px;

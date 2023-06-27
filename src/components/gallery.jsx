@@ -6,9 +6,9 @@ export const Gallery = (props) => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Галерея</h2>
+          <h2>Отзывы</h2>
           <p>
-            Пркекрасные виды Байкала.(красивый текст)
+            
           </p>
         </div>
         <div className="row">
@@ -20,7 +20,6 @@ export const Gallery = (props) => {
                     className="col-sm-6 col-md-4 col-lg-4"
                   >
                     <Image
-                      title={d.title}
                       largeImage={d.largeImage}
                       smallImage={d.smallImage}
                     />

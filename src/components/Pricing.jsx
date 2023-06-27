@@ -9,7 +9,7 @@ const Pricing = () => {
 
   return (
     
-    <div className="text-center test" id="pricing">
+    <div className="text-center test" id="pricing" style={{marginBottom: "15px"}}>
       <div className={``}>
         <h1
           className={`my-2 font-bold text-center text-primary`}
