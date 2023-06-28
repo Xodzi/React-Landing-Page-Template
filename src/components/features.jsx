@@ -17,29 +17,29 @@ export const Features = (props) => {
 
   return (
     <div id="features" className="text-center">
-      <div style={{}} className="">
+      <div style={{}} className="carousel">
         <div className="col-md-10 col-md-offset-1 section-title">
           <h2>Номера</h2>
         </div>
-        <Carousel dynamicHeight={true} emulateTouch={true} centerSlidePercentage={50} centerMode={true} showThumbs={false} infiniteLoop={false} showIndicators={true} showStatus={false} style={{backgroundColor: 'rgb(246, 246, 246)'}}
+        <Carousel style={{marginLeft: "10px"}} dynamicHeight={true} emulateTouch={true} centerSlidePercentage={50} centerMode={true} showThumbs={false} infiniteLoop={false} showIndicators={true} showStatus={false} style={{backgroundColor: 'rgb(246, 246, 246)'}}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev && (
-              <button type="button" onClick={onClickHandler} title={"назад"} style={{ ...arrowStyles, left: 15 }}>
+              <button type="button" onClick={onClickHandler} title={"назад"} style={{ ...arrowStyles, left: 5 }}>
                   ←
               </button>
           )
       }
       renderArrowNext={(onClickHandler, hasNext, label) =>
           hasNext && (
-              <button type="button" onClick={onClickHandler} title={"вперед"} style={{ ...arrowStyles, right: 15 }}>
+              <button type="button" onClick={onClickHandler} title={"вперед"} style={{ ...arrowStyles, right: 0 }}>
                   →
               </button>
           )
       }
 >
           {props.data?.map((d,i)=>
-          <div style={{backgroundColor: 'rgb(246, 246, 246)', textAlign: "center", height: "100%"}} key={`${d.title}-${i}`}>
-            <div style={{width: "98%"}}>
+          <div style={{backgroundColor: 'rgb(246, 246, 246)', textAlign: "center", height: "80%"}} key={`${d.title}-${i}`}>
+            <div style={{width: "98%", marginLeft: "10px",}}>
             <i style={{textAlign: "center", marginLeft: ""}} className={d.icon}></i>
             <h3 style={{marginLeft: ""}} >{d.title}</h3>
             {d.text.map((text) =>
