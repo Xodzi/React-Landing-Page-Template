@@ -291,7 +291,7 @@ header .intro-text {
   padding: 0;
 }
 #about .about-text li:before {
-  content: "\f00c";
+  /* content: "\f00c"; */
   font-family: "FontAwesome";
   color: #5ca9fb;
   font-size: 11px;
@@ -309,6 +309,54 @@ header .intro-text {
   line-height: 24px;
   margin: 30px 0;
 }
+
+/* Pricing Section */
+
+.price{
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border: 2px solid black;
+}
+
+#pricing {
+  padding: 100px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  color: #fff;
+}
+#pricing h2 {
+  color: #fff;
+}
+#pricing .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+#pricing i.fa {
+  font-size: 42px;
+  width: 120px;
+  height: 120px;
+  padding: 40px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+#pricing h3 {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #fff;
+}
+#pricing p {
+  color: rgba(255, 255, 255, 0.75);
+}
+#pricing .service-desc {
+  margin-bottom: 40px;
+}
+
 /* Services Section */
 #services {
   padding: 100px 0;

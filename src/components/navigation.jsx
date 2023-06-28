@@ -1,6 +1,7 @@
 import React from "react";
 
 export const Navigation = (props) => {
+  console.log(props)
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -54,7 +55,7 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll" style={{color:"#4040ff"}}>
+              <a onClick={(e) => {e.preventDefault(); props.updateData()}} href="" className="page-scroll" style={{color:"#4040ff"}}>
                 Обратный звонок
               </a>
             </li>

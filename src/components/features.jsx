@@ -21,7 +21,7 @@ export const Features = (props) => {
         <div className="col-md-10 col-md-offset-1 section-title">
           <h2>Номера</h2>
         </div>
-        <Carousel centerSlidePercentage={50} centerMode={true} showThumbs={false} infiniteLoop={false} showIndicators={true} showStatus={false} style={{backgroundColor: 'rgb(246, 246, 246)'}}
+        <Carousel emulateTouch={true} centerSlidePercentage={50} centerMode={true} showThumbs={false} infiniteLoop={false} showIndicators={true} showStatus={false} style={{backgroundColor: 'rgb(246, 246, 246)'}}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
           hasPrev && (
               <button type="button" onClick={onClickHandler} title={"назад"} style={{ ...arrowStyles, left: 15 }}>

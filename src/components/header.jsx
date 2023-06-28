@@ -12,14 +12,22 @@ export const Header = (props) => {
     document.addEventListener('cf-btn-click', handleClose);
     //const test = (event) => window.cbFreeModal();
   })
+  useEffect(() => {
+    setShow(props.Modal) //children function of interest
+  }, [props.Modal]);
+
 
 
   const test = (event) => {event.preventDefault(); window.cbFreeModal();}
-  const [show, setShow] = useState(false);
+  const test2 = (event) => {event.preventDefault(); console.log(show);}
+  const [show, setShow] = useState(props.Modal);
   const [back,setBack] = useState(false);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {setShow(false); props.onModalChange(false)}
   const handleShow = () => setShow(true);
+
+  console.log(props)
+  console.log(show)
 
   let number;
 
@@ -37,6 +45,7 @@ export const Header = (props) => {
 
   return (
     <header id="header">
+      
       <div className="modal show"
       style={{ display: 'block', position: 'initial' }}>
         <Modal visible={show} setVisible={setShow}>
@@ -47,7 +56,7 @@ export const Header = (props) => {
                     style={{marginLeft: '5px'}}
                     onClick={handleClose}
                   >
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <i className="fa fa-times" aria-hidden="true"></i>
               </a>{" "}
             </h2>
             <button

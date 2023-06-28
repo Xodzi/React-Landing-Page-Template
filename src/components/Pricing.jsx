@@ -22,13 +22,13 @@ const Pricing = () => {
           ></div>
         </div>
         <div
-          className={`flex flex-col sm:flex-row justify-center price`}
+          className={`flex flex-col sm:flex-row justify-center`}
         >
           <div
-            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-background mt-4`}
+            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg mt-4 price `}
           >
             <div
-              className={`flex-1 bg-background text-gray-800 rounded-t rounded-b-none overflow-hidden shadow`}
+              className={`flex-1 text-gray-800 rounded-t rounded-b-none overflow-hidden shadow-lg`}
             >
               <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
                 {firstPlan?.name}
@@ -46,16 +46,12 @@ const Pricing = () => {
                 ))}
               </ul>
             </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            > 
-            </div>
           </div>
           <div
-            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-primary mt-4`}
+            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg mt-4 price`}
           >
             <div
-              className={`flex-1 bg-background text-gray-800 rounded-t rounded-b-none overflow-hidden shadow`}
+              className={`flex-1 text-gray-800 rounded-t rounded-b-none overflow-hidden shadow-lg`}
             >
               <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
                 {secondPlan?.name}
@@ -73,20 +69,16 @@ const Pricing = () => {
                 ))}
               </ul>
             </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            >
-            </div>
           </div>
         </div>
         <div
-          className={`flex flex-col sm:flex-row justify-center price`}
+          className={`flex flex-col sm:flex-row justify-center`}
         >
           <div
-            className={`flex flex-col w-5/6 lg:w-2/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-background mt-1`}
+            className={`flex flex-col w-5/6 lg:w-2/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg mt-1 price`}
           >
             <div
-              className={`flex-1 bg-background text-gray-800 rounded-t rounded-b-none overflow-hidden shadow`}
+              className={`flex-1 text-gray-800 rounded-t rounded-b-none overflow-hidden shadow-lg `}
             >
               <ul className={`w-full text-center text-sm`}>
                 {thirdplan?.features.map((feature) => (

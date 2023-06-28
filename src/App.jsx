@@ -20,19 +20,29 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+  const [Modal, setModal] = useState(false);
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
   console.log(landingPageData)
+  const updateData = (event) => {
+    setModal(true)
+ }
+ function handlerModal(event){
+  console.log(event)
+  setModal(false)
+ }
+ 
 
   return (
-    <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
+    <div> 
+      <Navigation updateData={updateData} />
+      <Header onModalChange={handlerModal} Modal={Modal} data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery} />
       <Pricing />
+      <About data={landingPageData.Uslugi} />
       <Contact data={landingPageData.Contact} />
     </div>
   );
