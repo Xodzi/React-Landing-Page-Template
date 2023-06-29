@@ -45,7 +45,7 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#uslugi" className="page-scroll">
+              <a href="#about" className="page-scroll">
                 услуги
               </a>
             </li>
@@ -60,8 +60,8 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="tel:+79148824466" className="page-scroll" style={{color:"#FF0000"}}>
-              +7 (914) 882-44-66
+              <a href="tel:+79500767080" className="page-scroll" style={{color:"#FF0000"}}>
+               +7 (950) 076-70-80
               </a>
             </li>
           </ul>

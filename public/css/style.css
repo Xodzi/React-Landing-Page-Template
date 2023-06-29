@@ -656,4 +656,11 @@ label {
   #about img {
     margin: 50px 0;
   }
+  .second{
+    margin-top: 0;
+  }
 }
+.second{
+  margin-top:60;
+}
+@tailwind utilities;
